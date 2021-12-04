@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>فروشگاه آنلاین - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ProteusThemes">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="jquery-3.6.0.min.js">
+
+    <link rel="stylesheet" href="css/settings.css" type="text/css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr.custom.56918.js"></script>
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/57.png">
+    <link rel="shortcut icon" href="img/57.png">
+
+    <script type="text/javascript">
+        $(function () {
+            $('#slides').slidesjs({
+                width: 940,
+                height: 380,
+                play: {
+                    auto: true
+                }
+            });
+        });
+    </script>
+</head>
+
+
+<body class="">
+    <div class="master-wrapper">
+        <div class="navbar navbar-static-top" id="stickyNavbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="span9">
+                            <div class="nav-collapse collapse">
+                                <ul class="nav" id="mainNavigation">
+                                    <li class="dropdown active">
+                                        <a href="index.html" class="dropdown-toggle"> خانه </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="shop.html" class="dropdown-toggle"> فروشگاه </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="about.html">درباره ما</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="blog.html" class="dropdown-toggle">وبلاگ </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="contact.html">تماس با ما</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                   
+                             <form class="navbar-form pull-right" action="#" method="get">
+                                <button type="submit"><span class="icon-search"></span></button>
+                                 <input type="text" class="span1" name="search" id="navSearchInput">
+                            </form>
+                        </div>
+
+
+                        <div class="span3">
+                            <div class="cart-container" id="cartContainer">
+                                <div class="cart">
+                                    <p class="items">سبد خرید </p>
+                                    <a href="checkout-step-1.html" class="btn btn-danger">
+                                        <i class="icon-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="img/slide1.jpg" style="width:100%;">
+            <img class="mySlides" src="img/slide2.jpg" style="width:100%;">
+            <img class="mySlides" src="img/slide3.jpg" style="width:100%;">
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+
+            setInterval(function () {
+                plusDivs(1);
+            }, 5000);
+        </script>
+
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="push-up over-slider blocks-spacer">
+                        <div class="row">
+                            <div class="span4">
+                                <a class="btn btn-block banner">
+                                    <span class="title"><span class="light">فروش</span> تابستانی</span>
+                                    <em>تا 60% تخفیف روی کفش ها</em>
+                                </a>
+                            </div>
+                            <div class="span4">
+                                <a class="btn btn-block colored banner">
+                                    <span class="title"><span class="light">ارسال</span> رایگان</span>
+                                    <em>برای خرید های بیش از 69000 تومان</em>
+                                </a>
+                            </div>
+                            <div class="span4">
+                                <a class="btn btn-block banner">
+                                    <span class="title"><span class="light">محصولات</span> جدید</span>
+                                    <em>از محصولات جدید دیدن کنید.</em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row featured-items blocks-spacer">
+                <div class="span12">
+                    <div class="main-titles lined">
+                        <h2 class="title"><span class="light">محصولات</span> ویژه</h2>
+
+                    </div>
+                </div>
+
+                <div class="span12">
+                    <div class="carouFredSel" data-autoplay="false" data-nav="featuredItems">
+                        <div class="slide">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="product">
+                                        <div class="product-img featured">
+                                            <div class="picture">
+                                                <img src="img/kamarband.jpg" width="247" height="247">
+                                                <div class="img-overlay">
+                                                    <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                                    <a class="btn buy btn-danger">خرید</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-titles">
+                                            <h4 class="title">115/000 تومان</h4>
+                                            <h5 class="no-margin">کمربند مردانه </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="span4">
+                                    <div class="product">
+                                        <div class="product-img featured">
+                                            <div class="picture">
+                                                <img src="img/kole poshti.jpg" width="247" height="247">
+                                                <div class="img-overlay">
+                                                    <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                                    <a class="btn buy btn-danger">خرید</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-titles">
+                                            <h4 class="title">980/000 تومان</h4>
+                                            <h5 class="no-margin">کوله پشتی </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="span4">
+                                    <div class="product">
+                                        <div class="product-img featured">
+                                            <div class="picture">
+                                                <img src="img/download.png" width="247" height="247">
+                                                <div class="img-overlay">
+                                                    <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                                    <a class="btn buy btn-danger">خرید</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="main-titles">
+                                            <h4 class="title">224/000 تومان</h4>
+                                            <h5 class="no-margin">ساعت مچی</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxed-area blocks-spacer">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="main-titles lined">
+                            <h2 class="title"><span class="light">محصولات</span> جدید فروشگاه</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row popup-products blocks-spacer">
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/dastband2.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>695/000 تومان</del>&nbsp;&nbsp;<ins><span>678,000
+                                        تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/product-32.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>365/000 تومان</del>&nbsp;&nbsp;<ins><span>350,000
+                                        تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/goshvare1.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>232/800 تومان</del>&nbsp;&nbsp;<ins><span>225,000
+                                        تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/product-24.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>100/000 تومان</del>&nbsp;&nbsp;<ins><span>85,000
+                                        تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row popup-products blocks-spacer">
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/product-33.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>450/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                        420,000 تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/product-22.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>345/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                        320,000 تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/dastband3.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>185/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                        160,000 تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span3">
+                        <div class="product">
+                            <div class="product-img">
+                                <div class="picture">
+                                    <img src="img/product-13.jpg" width="540" height="374" />
+                                    <div class="img-overlay">
+                                        <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                        <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+                                <del>230/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                        200,000 تومان</span></ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="most-popular blocks-spacer">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="main-titles lined">
+                        <h2 class="title"><span class="light"> محبوبترین </span>محصولات فروشگاه </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row popup-products">
+                <div class="span3">
+                    <div class="product">
+                        <div class="product-img">
+                            <div class="picture">
+                                <img src="img/product-31.jpg" width="540" height="412" />
+                                <div class="img-overlay">
+                                    <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                    <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-titles no-margin">
+                            <del>200/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                    178,000 تومان</span></ins>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span3">
+                    <div class="product">
+                        <div class="product-img">
+                            <div class="picture">
+                                <img src="img/product-21.jpg" width="540" height="412" />
+                                <div class="img-overlay">
+                                    <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                    <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-titles no-margin">
+                            <del>360/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                    340,000 تومان</span></ins>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span3">
+                    <div class="product">
+                        <div class="product-img">
+                            <div class="picture">
+                                <img src="img/goshvare3.jpg" width="540" height="412" />
+                                <div class="img-overlay">
+                                    <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                    <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-titles no-margin">
+                            <del>450/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                    420,000 تومان</span></ins>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span3">
+                    <div class="product">
+                        <div class="product-img">
+                            <div class="picture">
+                                <img src="img/saat3.jpg" width="540" height="412" />
+                                <div class="img-overlay">
+                                    <a class="btn more btn-primary">توضیحات بیشتر</a>
+                                    <a class="btn buy btn-danger">اضافه به سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-titles no-margin">
+                            <del>300/000 تومان</del>&nbsp;&nbsp;<ins><span>
+                                    290,000 تومان</span></ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-light">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="span4 offset1">
+                        <div class="main-titles">
+                            <h3 class="title">درباره ما</h3>
+                        </div>
+                        <span>لورم ایپسوم متن ساختگی با تولید سادگی میباشد.</span>
+                    </div>
+
+                    <div class="span4">
+                        <div class="main-titles">
+                            <h3 class="title">
+                                <span class="light">عضویت</span> در خبرنامه
+                            </h3>
+                        </div>
+
+                        <div id="mc_embed_signup">
+                            <div class="validate form form-inline">
+                                <div class="mc-field-group">
+                                    <input type="email" value="" placeholder="آدرس ایمیلتان را وارد کنید" name="EMAIL"
+                                        class="required email">
+                                    <input type="button" value="ارسال" class="btn btn-primary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="span4 text-center">
+                        <div class="main-titles lined">
+                            <h3 class="title"><span class="light">ناوبری</span> اصلی</h3>
+                        </div>
+                        <ul class="nav bold">
+                            <li><a>خانه</a></li>
+                            <li><a>صفحات</a></li>
+                            <li><a>درباره ما</a></li>
+                            <li><a>تماس با ما</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="span4 text-center">
+                        <div class="main-titles lined">
+                            <h3 class="title">
+                                <span class="light">اطلاعات</span>
+                            </h3>
+                        </div>
+                        <ul class="nav">
+                            <li><a>پیوند نوشتار آزمایشی</a></li>
+                            <li><a>نوشتار آزمایشی دیگر</a></li>
+                            <li><a>برند ها</a></li>
+                            <li><a>مشاهده آخرین توییت ها</a></li>
+                            <li><a>نوشتار آزمایشی دیگر</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="span4 text-center">
+                        <div class="main-titles lined">
+                            <h3 class="title">
+                                <span class="light">لینک های سفارشی</span>
+                            </h3>
+                        </div>
+                        <ul class="nav">
+                            <li><a>پیوند نوشتار آزمایشی</a></li>
+                            <li><a>نوشتار آزمایشی دیگر</a></li>
+                            <li><a>برند ها</a></li>
+                            <li><a>مشاهده آخرین توییت ها</a></li>
+                            <li><a>نوشتار آزمایشی دیگر</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
